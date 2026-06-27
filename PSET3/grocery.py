@@ -16,4 +16,5 @@ def main():
                 print(list[grocery], grocery)
             break
 
-main()
+if __name__ == "__main__":
+    main()
