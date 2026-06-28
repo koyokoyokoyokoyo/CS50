@@ -32,3 +32,7 @@ for result in o["results"]:
     print(result["trackName"])
 #from FILENAME import FUNCTION < importing fucntions form your own personal file
 #for your file, it is BEST to use if __name__ == etc OR ELSE your code will not work :(
+
+#########extra note from lesson5:
+if not isinstance(variable, (int,float)): # isinstance(v, t) is a native python function 
+    raise TypeError("must be of type int or float")

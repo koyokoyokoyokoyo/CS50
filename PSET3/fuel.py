@@ -8,7 +8,7 @@ def convert():
         try:
             x, y = map(int, fraction.split("/"))
             if x > y:
-                continue
+                raise ValueError
             percentage = (x/y) * 100
             if percentage <= 1:
                 return "E"
