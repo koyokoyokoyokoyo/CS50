@@ -30,5 +30,5 @@ try:
     #the second instance of img2 tells us that we want to use THAT as a mask(alpha band). LOOK at the documentation for reference!
     imgnew.save(f"{fileOutput}")
 except FileNotFoundError:
-    print("File not found :()")
+    print("File not found :(")
     sys.exit()
