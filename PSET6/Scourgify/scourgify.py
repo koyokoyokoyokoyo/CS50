@@ -19,7 +19,7 @@ elif not filename1.endswith(".csv"):
 names = []
 try:
     with open(filename1, "r") as before, open(filename2, "w") as after:
-        reader = DictReader(before)
+        reader = DictReader(before) #I added fieldnames previously here, which was wrong and caused conflict, by predefining said headers, when the file already had some.
         writer = DictWriter(after, fieldnames=["first","last","house"])
         writer.writeheader()
         
@@ -31,7 +31,7 @@ try:
                 {
                     "first":first,
                     "last":last,
-                    "house":row["house"]
+                    "house":row["house"] #conflict I mentioned earlier happened here
                 }
             )
 except FileNotFoundError:
