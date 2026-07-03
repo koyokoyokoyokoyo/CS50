@@ -14,7 +14,7 @@ else:
 #(\w|\s) a group(). alphanumeric or whitespace
 #(\w+\s)? can be there OR NOT, which is what ? does
 #(?:...)
-
+#(?P<capture_name>\+etc...) ?P<> gives a capture group a name
 name = input("What's your name? ").strip()
 matches = re.search(r"^(.+), *(.+)$", name)
 if matches:
@@ -41,7 +41,7 @@ if matches := re.search(r"^https?://(www\.)?twitter\.com/(.+)$", url, re.IGNOREC
 #ALTERNATIVE WAY WITH non-capturing versions (?:...)
 if matches := re.search(r"^https?://(?:www\.)?twitter\.com/([a-z0-9_]+)", url, re.IGNORECASE):
     #removed $ to allow any symbol after the username
-    print(f"Username: {matches.group(2)}")
+    print(f"Username: {matches.group(1)}")
 
                     ####note that there are also other functions to use with the re library####
 
