@@ -1,6 +1,6 @@
 import re #check the re library: docs.python.org/3/library/re.html <-- inlcuding symbols for patterns(re.search)
 #example:
-email = input(what's your input? )
+email = input("what's your input? ")
 if re.search(r"^\w+@(\w+\.)?\w+\.edu$", email, re.IGNORECASE):
     print("Valid")
 else:
