@@ -1,32 +1,3 @@
-def main():
-    #TUPLE replace
-    student = get_student()
-    if student[0] == "Padma":
-        student[1] == "Ravenclaw"
-    #if DICTIONARY REPLACE
-    if student["name"] == "Padma":
-        student["house"] = "Ravenclaw"
-    print(f"{student[0]} from {student[1]}")
-    #if DICTIONARY:
-    print(f"{student['name']} from {student['house']}") #CANT USE double q. inside double q.
-    #if CLASS
-    print(f"{student.name} from {student.house}")
-    
-# def get_student():
-#     name = input("Name: ")
-#     house = input("House: ")
-#     #tuple. You are returning 1 item with two things. (x, y)
-#     return [name, house] #or you can return a tuple/list
-
-# #Using a dictionary instead
-# def get_student():
-#     student = {}
-#     student["name"] = input("Name: ") #name key, value of input
-#     student["house"] = input("House: ")
-#     return student
-    #return {"name": name, "house": house} <- doesn't need a dictionary initialized before hand!
-    #Now about classes! (You can read more about it in the documentation)
-
 class Student: #constructor
     def __init__(self, name, house): #instance method. Initializes the contents of an object from a class
         #writing house=None for e.g means entering a value for house is OPTIONAL
@@ -67,5 +38,5 @@ def main():
     print(student) #triggers __str__ method
 
 #there exists @staticmethod too!
-#instance methods/variables = specific objects
+#instance methods/variables = specific objects/ of particular class
 #class methods/variables = all objects of class

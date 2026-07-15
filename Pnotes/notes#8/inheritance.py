@@ -22,3 +22,4 @@ class Professor(Wizard):
 wizard = Wizard("Albus")
 student = Student("Harry", "Gryffindor")
 professor = Professor("Severus", "blah blah")
+###note: type() for checking type of data of variable
