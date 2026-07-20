@@ -1,0 +1,18 @@
+pyfiglet
+PIL
+subprocess (since os.system has been depreciated)
+random_word
+random
+cowsay
+sys
+
+
+
+Additional links:
+
+https://www.geeksforgeeks.org/python/python-subprocess-module/
+
+https://stackoverflow.com/questions/33239308/how-to-get-exception-message-in-python-properly
+
+https://stackoverflow.com/questions/6011235/run-a-program-from-python-and-have-it-continue-to-run-after-the-script-is-kille
+
